@@ -1,3 +1,8 @@
 version: 1.0.{build}
 build_script:
-- cmd: vcpkg install freetype:arm-uwp
+- cmd: >-
+    vcpkg update
+
+    echo updated
+
+    vcpkg install freetype:arm-uwp
