@@ -4,6 +4,10 @@ build_script:
 - cmd: >-
     vcpkg update
 
+    cd C:\Tools\vcpkg
+
+    git pull
+
     echo updated
 
     vcpkg install libpng:arm-uwp
