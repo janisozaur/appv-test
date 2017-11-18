@@ -15,3 +15,7 @@ build_script:
     echo updated
 
     vcpkg install libzip:x86-uwp
+
+    type buildtrees\libpng\build-x86-uwp-rel-out.log
+
+    cat buildtrees\libpng\build-x86-uwp-rel-out.log
