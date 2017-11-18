@@ -8,6 +8,10 @@ build_script:
 
     git pull
 
+    .\bootstrap-vcpkg.bat
+
+    .\vcpkg integrate install
+
     echo updated
 
     vcpkg install libpng:arm-uwp
