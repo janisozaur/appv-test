@@ -5,4 +5,4 @@ build_script:
     
     bash --version
 
-    bash -lc "exec 0</dev/null && mount && find / -iname vcpkg.exe"
+    bash -lc "exec 0</dev/null && mount && find /c -iname vcpkg.exe"
