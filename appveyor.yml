@@ -5,4 +5,4 @@ build_script:
     
     bash --version
 
-    bash -lc "exec 0</dev/null && which xargs && xargs --version && echo foo bar | xargs -P 2 -n1 echo"
+    bash -lc "exec 0</dev/null && mount && find / -iname vcpkg.exe"
