@@ -2,12 +2,3 @@ version: 1.0.{build}
 image: Visual Studio 2017
 init:
   - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
-build_script:
-- cmd: >-
-    
-    bash --version
-
-    bash -lc "exec 0</dev/null && mount && ls -la /c && find /c/tools/ -iname vcpkg.exe"
-
-    bash -lc "exec 0</dev/null && /c/tools/vcpkg/vcpkg.exe install libzip:x64-windows"
-    
